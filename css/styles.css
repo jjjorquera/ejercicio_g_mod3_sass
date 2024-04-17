@@ -81,6 +81,7 @@ body {
 }
 
 .form__section-group label {
+  text-align: start;
   display: block;
   margin-bottom: 5px;
 }
