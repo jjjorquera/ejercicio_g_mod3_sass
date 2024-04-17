@@ -31,7 +31,7 @@ body {
 
 /* CSS para nav, a */
 .header__nav-link {
-  color: #403dda;
+  color: #403dda;/* cambiar color de letras del header_nav-link */
   padding: 0px 10px;
 }
 
