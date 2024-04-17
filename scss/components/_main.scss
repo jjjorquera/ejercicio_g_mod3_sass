@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as*;
+
+/* padding a main*/
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos de galeria de imagen*/
+
+.main__section-galery {
+    display: flex; /* display flex aplica flex direction-row, lo que hace que los elementos esten posicionados horizontalmente en la web*/
+    flex-wrap: wrap; /* display wrap arrastra las imagenes o el contenido hacia abajo*/
+    justify-content: space-around;
+    /* con esto, ya tendriamos un diseño responsive basico */
+
+}
+
+/* con esto decidiremos tener 5 imagenes en pantalla
+    como se hace, se divide la cantidad que es 5 por 100(100% de la pagina)
+    y se aplica en un width calc() -- esto es para PC escritorio */
+.main__section-galery-img{
+    margin: 1rem;
+    width: calc(20% - 2rem);
+}
+
+#contact-form {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form__section-group {
+    margin-bottom: 15px;
+  }
+  
+  .form__section-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form__section-group input, .form__section-group textarea {
+    width:100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .main__section-form-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .main__section-form-button:hover {
+    background-color: #0056b3;
+  }

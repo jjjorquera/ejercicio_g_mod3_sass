@@ -1,0 +1,36 @@
+/* Notebooks*/
+@media (max-width: 1200px) {
+    .main__section-galery-img {
+        margin: 1rem;
+        width: calc(25% - 2rem);
+    }
+}
+
+/* Tablets*/
+
+@media (max-width: 992px) {
+    .main__section-galery-img {
+        margin: 1rem;
+        width: calc(33.333% - 2rem);
+    }
+}
+
+@media (max-width: 778px) {
+    .main__section-galery-img {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .main__section-galery-img {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+}
+@media (max-width: 369px) {
+    .main__section-galery-img {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+}

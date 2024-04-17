@@ -1,0 +1,150 @@
+@charset "UTF-8";
+body, .header__title, .main__section-title, .main__section-text, .header__nav, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, Sans-serif;
+}
+
+.header__title, .main__section-title, .main__section-text {
+  margin-bottom: 1rem;
+}
+
+.container-site {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__title, .main__section-title, .main__section-text {
+  margin-bottom: 1rem;
+}
+
+.header {
+  background-color: rgba(241, 241, 241, 0.9450980392);
+  padding: 20px;
+  text-align: center;
+  position: static;
+  width: 100%;
+}
+
+/* CSS para nav, a */
+.header__nav-link {
+  color: #333;
+  padding: 0px 10px;
+}
+
+.header__nav-link:hover {
+  color: rgb(6, 76, 113);
+}
+
+.header__nav-link::after {
+  content: "|";
+  padding: 0 10px;
+}
+
+.header__nav-link:last-child::after {
+  content: none;
+}
+
+/* padding a main*/
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos de galeria de imagen*/
+.main__section-galery {
+  display: flex; /* display flex aplica flex direction-row, lo que hace que los elementos esten posicionados horizontalmente en la web*/
+  flex-wrap: wrap; /* display wrap arrastra las imagenes o el contenido hacia abajo*/
+  justify-content: space-around;
+  /* con esto, ya tendriamos un diseño responsive basico */
+}
+
+/* con esto decidiremos tener 5 imagenes en pantalla
+    como se hace, se divide la cantidad que es 5 por 100(100% de la pagina)
+    y se aplica en un width calc() -- esto es para PC escritorio */
+.main__section-galery-img {
+  margin: 1rem;
+  width: calc(20% - 2rem);
+}
+
+#contact-form {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form__section-group {
+  margin-bottom: 15px;
+}
+
+.form__section-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__section-group input, .form__section-group textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.main__section-form-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.main__section-form-button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: rgba(183, 173, 173, 0.768627451);
+  text-align: center;
+  padding: 20px;
+  /* Con esto solucionamos el sticly footer*/
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Notebooks*/
+@media (max-width: 1200px) {
+  .main__section-galery-img {
+    margin: 1rem;
+    width: calc(25% - 2rem);
+  }
+}
+/* Tablets*/
+@media (max-width: 992px) {
+  .main__section-galery-img {
+    margin: 1rem;
+    width: calc(33.333% - 2rem);
+  }
+}
+@media (max-width: 778px) {
+  .main__section-galery-img {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 576px) {
+  .main__section-galery-img {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+@media (max-width: 369px) {
+  .main__section-galery-img {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

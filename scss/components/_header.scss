@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as*;
+
+.container-site{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__title, .main__section-title, .main__section-text {
+    margin-bottom: 1rem;
+
+}
+
+.header {
+    background-color: $background-color-header;
+    padding: 20px;
+    text-align: center;
+    position: static;
+    width: 100%;
+}
+
+/* CSS para nav, a */
+.header__nav-link {
+    color: #333;
+    padding: 0px 10px;
+}
+
+.header__nav-link:hover{
+    color: $color-nav-link-hover;
+}
+
+.header__nav-link::after {
+    content: "|";
+    padding: 0 10px;
+}
+
+.header__nav-link:last-child::after {
+    content: none;
+} 

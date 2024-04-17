@@ -1,0 +1,15 @@
+{
+  "name": "patron-7-1-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "Juan Jorquera",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}
