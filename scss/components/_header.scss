@@ -21,11 +21,13 @@
 .header__nav-link {
     color: #333;
     padding: 0px 10px;
+
+    & .link:hover{
+        color: $color-nav-link-hover;
+    }
 }
 
-.header__nav-link:hover{
-    color: $color-nav-link-hover;
-}
+
 
 .header__nav-link::after {
     content: "|";

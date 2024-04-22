@@ -34,9 +34,8 @@ body {
   color: #333;
   padding: 0px 10px;
 }
-
-.header__nav-link:hover {
-  color: rgb(6, 76, 113);
+.header__nav-link .link:hover {
+  color: rgb(199, 24, 62);
 }
 
 .header__nav-link::after {
