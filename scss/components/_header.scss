@@ -19,7 +19,7 @@
 
 /* CSS para nav, a */
 .header__nav-link {
-    color: #333;
+    color: $color-nav-link;
     padding: 0px 10px;
 
     & .link:hover{

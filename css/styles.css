@@ -31,11 +31,11 @@ body {
 
 /* CSS para nav, a */
 .header__nav-link {
-  color: #403dda;/* cambiar color de letras del header_nav-link */
+  color: #007bff;
   padding: 0px 10px;
 }
 .header__nav-link .link:hover {
-  color: rgb(199, 24, 62);
+  color: rgb(59, 0, 13);
 }
 
 .header__nav-link::after {
@@ -112,6 +112,23 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__social-media-facebook {
+  margin-right: 1rem;
+}
+
+.footer__social-media-whatsapp {
+  margin-right: 1rem;
+}
+
+.footer__social-media-twitter {
+  margin-right: 1rem;
 }
 
 /* Notebooks*/
