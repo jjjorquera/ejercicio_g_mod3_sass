@@ -3,11 +3,15 @@
 /* padding a main*/
 
 .main {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 /* Estilos de galeria de imagen*/
+
+.main__section {
+  justify-content: center;
+}
 
 .main__section-galery {
     display: flex; /* display flex aplica flex direction-row, lo que hace que los elementos esten posicionados horizontalmente en la web*/
@@ -25,6 +29,7 @@
     width: calc(30% - 1rem);
 }
 
+// <!-- Formulario --!>
 #contact-form {
     padding: 20px;
     max-width: 600px;
