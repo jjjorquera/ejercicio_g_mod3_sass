@@ -9,13 +9,37 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">Te lo vendo</h1>
+      <nav class="navbar navbar-expand-lg bg-body-warning ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Te lo vendo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index1.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- <h1 class="header__title">Te lo vendo</h1>
         <nav>
             <a class="header__nav-link" href="index1.html">Inicio</a>
             <a class="header__nav-link" href="#">Productos</a>
             <a class="header__nav-link" href="#">Acerca de</a>
             <a class="header__nav-link" href="contacto.html">Contacto</a>
-        </nav>
+        </nav> -->
     </header>
     
     <main class="main">
@@ -42,8 +66,30 @@
               <label class="main__section-form-input for="message">Comentario: </label>
               <textarea class="main__section-form-textarea name="message" id="message" rows="4" required></textarea>
             </div>
-    
-            <button class="main__section-form-button" type="submit">Enviar</button>
+          <!-- Button trigger modal -->
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enviar
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Alerta</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Guardado con Exito!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <button id="myModal" class="main__section-form-button" type="submit">Enviar</button> -->
           </form>
     
         </section>
@@ -77,6 +123,6 @@
         </div>
     </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
