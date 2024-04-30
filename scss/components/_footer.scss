@@ -3,7 +3,7 @@
 footer {
     background-color: $background-color-footer;
     text-align: center;
-    padding: 20px;
+    padding: 12px;
     /* Con esto solucionamos el sticly footer*/
     position: fixed;
     left: 0;
@@ -12,11 +12,17 @@ footer {
 
 }
 
+.footer__text {
+    display: flex;
+    justify-content: center;
+}
+
 .footer__social-media {
     display: flex;
-    justify-content: end;
-    
+    justify-content: center;
+    margin-left: 0rem;
 }
+
 
 .footer__social-media-facebook {
     margin-right: 1rem;

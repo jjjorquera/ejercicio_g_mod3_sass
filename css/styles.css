@@ -11955,7 +11955,7 @@ body {
 footer {
   background-color: rgba(183, 173, 173, 0.768627451);
   text-align: center;
-  padding: 20px;
+  padding: 12px;
   /* Con esto solucionamos el sticly footer*/
   position: fixed;
   left: 0;
@@ -11963,9 +11963,15 @@ footer {
   width: 100%;
 }
 
+.footer__text {
+  display: flex;
+  justify-content: center;
+}
+
 .footer__social-media {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-left: 0rem;
 }
 
 .footer__social-media-facebook {
